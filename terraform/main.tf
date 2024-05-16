@@ -51,4 +51,17 @@ resource "local_sensitive_file" "service_account_private_key" {
     content = base64decode(google_service_account_key.service_account_key.private_key)
 }
 
+data "google_iam_policy" "playground-gitops-iam-policy" {
+    binding {
+      role = "roles/"
+      members = [ 
+        "serviceAccount:${google_service_account.service_account.email}"
+       ]
+    }
+}
+
+resource "google_service_account_iam_policy" "playground-gitops-iam" {
+  service_account_id = google_service_account.service_account.id
+  policy_data        = data.google_iam_policy.admin.policy_data
+}
 

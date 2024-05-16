@@ -8,3 +8,4 @@
 ## gcloud CLI
 - Run `gcloud init`
 - Select login and choose the created project
+- Run `gcloud auth application-default login`

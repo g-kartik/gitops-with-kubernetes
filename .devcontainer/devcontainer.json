@@ -7,12 +7,14 @@
 	},
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {}
+		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
+		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {},
+		"ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"4ops.terraform"
+				"hashicorp.terraform"
 			]
 		}
 	}

@@ -9,7 +9,8 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
 		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {},
-		"ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {}
+		"ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {},
+		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
 	},
 	"customizations": {
 		"vscode": {

@@ -13,6 +13,9 @@ module "service_account" {
     account_id = each.key
     display_name = each.value.display_name
     roles = each.value.roles
+    providers = {
+        google = google
+    }
 }
 
 module "cluster" {

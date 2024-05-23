@@ -1,11 +1,3 @@
-variable "project" {
-    description = "ID of the Google Cloud project"
-}
-
-variable "region" {
-    description = "Name of region where the resources are needed to be deployed"
-}
-
 variable "account_id" {
     description = "Unique ID of the Google Cloud service account"
     type = string

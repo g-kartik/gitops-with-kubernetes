@@ -10,8 +10,6 @@ terraform {
 module "service_account" {
     for_each = var.service_accounts
     source = "./modules/service_account"
-    region = var.region
-    project = var.project
     account_id = each.key
     display_name = each.value.display_name
     roles = each.value.roles
@@ -19,8 +17,6 @@ module "service_account" {
 
 module "cluster" {
     source = "./modules/gke_cluster"
-    region = var.region
-    project = var.project
     providers = {
         google = google.gke_cluster
     }

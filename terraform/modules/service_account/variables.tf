@@ -11,8 +11,12 @@ variable "account_id" {
     type = string
 }
 
-variable "service_account_display_name" {
+variable "display_name" {
     type = string
     description = "Display name of the Google Cloud service account"
-    default = "Service Account"
+}
+
+variable "roles" {
+    type = list(string)
+    description = "List of policy roles to the assigned to the service account user"
 }

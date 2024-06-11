@@ -25,7 +25,7 @@ issuer = "https://api.pulumi.com/oidc"
 pulumi_config = pulumi.Config()
 audience = pulumi.get_organization()
 env_name = pulumi_config.require("environmentName")
-workload_identity_pool_id=pulumi_config.require("workload_identity_pool_id")
+workload_identity_pool_id=pulumi_config.require("workloadIdentityPoolId")
 sub_id = f"pulumi:environments:org:{audience}:env:{env_name}"
 
 # Retrieve project details

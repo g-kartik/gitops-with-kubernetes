@@ -1,4 +1,4 @@
 config:
   gcp-oidc:environmentName: gitops
-  gcp-oidc:workload_identity_pool_id: pulumi-oidc-identity-pool-3
+  gcp-oidc:workloadIdentityPoolId: pulumi-oidc-identity-pool-3
   gcp:project: workload-identity-gkarthik

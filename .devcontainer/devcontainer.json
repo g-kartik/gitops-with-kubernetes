@@ -10,12 +10,19 @@
 		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
 		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {},
 		"ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {},
-		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+		"ghcr.io/devcontainers-contrib/features/pulumi:1": {},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12.4",
+			"installJupyterlab": true
+		}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"hashicorp.terraform"
+				"hashicorp.terraform",
+				"pulumi.pulumi-lsp-client",
+				"ms-toolsai.jupyter"
 			]
 		}
 	}

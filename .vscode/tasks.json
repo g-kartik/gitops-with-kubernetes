@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	    {
+			"label": "pulumi-debug",
+			"type": "shell",
+			"command": ". ./pulumi_debug.sh",
+			"isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}/pulumi_project/gcp_oidc"
+            }
+		}
+	]
+}

@@ -6,3 +6,5 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] \
         && curl https://packages.cloud.google.com/apt/doc/apt-key.gpg \
         | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg \
         && apt-get update -y && apt-get install google-cloud-sdk -y
+
+RUN curl -fsSL https://get.pulumi.com/esc/install.sh | sh

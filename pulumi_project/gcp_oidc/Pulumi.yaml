@@ -1,0 +1,4 @@
+name: gcp-oidc
+runtime:
+  name: python
+description: A minimal Google Cloud Python Pulumi program
